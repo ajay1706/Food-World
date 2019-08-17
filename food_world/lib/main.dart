@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:food_world/screens/categories_screen.dart';
 import 'package:food_world/screens/category_meals_screen.dart';
+import 'package:food_world/screens/meal_detail_screen.dart';
 
 void main() => runApp(MyApp());
 
@@ -30,6 +31,7 @@ title: TextStyle(
       routes: {
 '/': (ctx) => CategoriesScreen(),
         CategoryMealsScreen.routeName: (ctx) => CategoryMealsScreen(),
+        MealDetailScreen.routeName: (ctx) => MealDetailScreen(),
       },
     );
   }
