@@ -40,7 +40,15 @@ void selectMeal(){
                 topLeft: Radius.circular(15),
                 topRight: Radius.circular(15)
               ),
-              child: Image.network(imageUrl,height:250 ,width: double.infinity,fit: BoxFit.cover,),)
+              child: Image.network(imageUrl,height:250 ,width: double.infinity,fit: BoxFit.cover,),),
+              Text(title,
+              style: TextStyle(
+                fontSize: 26,
+                color: Colors.white,
+              ),
+              softWrap: true,
+                overflow: TextOverflow.fade,
+              )
 
             ],)
 
