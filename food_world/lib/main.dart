@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:food_world/categories_screen.dart';
+import 'package:food_world/category_meals_screen.dart';
 
 void main() => runApp(MyApp());
 
@@ -26,6 +27,10 @@ title: TextStyle(
         )
       ),
       home:CategoriesScreen(),
+      routes: {
+
+        '/category-meals': (ctx) => CategoryMealsScreen(),
+      },
     );
   }
 }
