@@ -61,7 +61,7 @@ buildSectionTitle(context, 'Ingredients'),
                 child: Text(
                   selectedMeal.ingredients[index],
                   style: TextStyle(
-                    color: Colors.white
+                    color: Colors.black
                   ),
                 ),
               ),
