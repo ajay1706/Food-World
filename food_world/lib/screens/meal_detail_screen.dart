@@ -67,7 +67,7 @@ buildSectionTitle(context, 'Ingredients'),
               ),
             ),itemCount:selectedMeal.ingredients.length ,),
           ),
-          buildSectionTitle(context, 'Steps'),
+          buildSectionTitle(context, 'Step'),
           buildContainer(ListView.builder(
             itemBuilder:  (ctx,index) => Column(
               children: <Widget>[
