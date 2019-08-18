@@ -74,7 +74,7 @@ buildSectionTitle(context, 'Ingredients'),
                 ListTile(
                   leading: CircleAvatar(child: Text("# ${(index+1)}"),
                   ),
-                  title: Text(selectedMeal.steps[index]
+                  title: Text(selectedMeal.steps[ind
                   ),
 
                 ),
