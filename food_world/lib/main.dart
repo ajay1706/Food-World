@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
       title: "Daily Meals",
       theme: ThemeData(
         primarySwatch: Colors.pink,
-        accentColor: Colors.amber,
+        accentColor: Color.fromRGBO(0, 0, 0, .63),
         canvasColor: Color.fromRGBO(255, 254, 229, 1),
         fontFamily: 'Raleway',
         textTheme: ThemeData.light().textTheme.copyWith(

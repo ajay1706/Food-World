@@ -59,7 +59,10 @@ buildSectionTitle(context, 'Ingredients'),
               child: Padding(
                 padding: const EdgeInsets.symmetric(vertical: 5,horizontal: 10),
                 child: Text(
-                  selectedMeal.ingredients[index]
+                  selectedMeal.ingredients[index],
+                  style: TextStyle(
+                    color: Colors.white
+                  ),
                 ),
               ),
             ),itemCount:selectedMeal.ingredients.length ,),
