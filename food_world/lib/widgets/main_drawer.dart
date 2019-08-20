@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:food_world/screens/filters_screen.dart';
 
 
 class MainDrawer extends StatelessWidget {
@@ -43,12 +44,14 @@ child:Column(
 SizedBox(height: 20,),
     buildListTile("Meals", Icons.restaurant,
       (){
-      Navigator.of(context).pushNamed('/')
+      Navigator.of(context).pushNamed('/');
 
     }
     ),
     buildListTile("Filters", Icons.settings,
-            (){}
+            (){
+      Navigator.of(context).pushNamed(FiltersScreen.routeName);
+            }
     ),
 
 
