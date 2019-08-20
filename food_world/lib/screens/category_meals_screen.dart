@@ -67,7 +67,7 @@ var _loadedInitData =false;
         duration: displayMeals[index].duration,
         affordability: displayMeals[index].affordability,
         complexity: displayMeals[index].complexity,
-        removeItem: _removeMeal,);
+        );
       },itemCount:displayMeals.length ,)
     );}
 }

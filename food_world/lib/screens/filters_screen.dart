@@ -32,9 +32,9 @@ class _FiltersScreenState extends State<FiltersScreen> {
     _vegetarian = widget.currentFilters['vegetarain'];
 
 
-    super.initState();
+   super.initState();
   } // ignore: missing_return
-  Widget buildSwitchList(String title, String subTitle,bool currentValue,Function updateValue){
+  Widget _buildSwitchList(String title, String subTitle,bool currentValue,Function updateValue){
    return SwitchListTile(
         title: Text(
        title
@@ -82,25 +82,25 @@ final selectedFilters = {
             child: ListView(
               children: <Widget>[
 
-             buildSwitchList("Gluten-free", "Only Gluten-free meals. ", _glutenFree,
+             _buildSwitchList("Gluten-free", "Only Gluten-free meals. ", _glutenFree,
                  (newValue){
                setState(() {
                  _glutenFree=newValue;
                });
                  }),
-                buildSwitchList("Lactose-free", "Only Lactose-free meals. ", _lactoseFree,
+                _buildSwitchList("Lactose-free", "Only Lactose-free meals. ", _lactoseFree,
                         (newValue){
                       setState(() {
                         _lactoseFree=newValue;
                       });
                     }),
-                buildSwitchList("Vegetarian", "Only Vegetarian meals. ", _vegetarian,
+                _buildSwitchList("Vegetarian", "Only Vegetarian meals. ", _vegetarian,
                         (newValue){
                       setState(() {
                         _vegetarian=newValue;
                       });
                     }),
-                buildSwitchList("Vegan", "Only Vegan meals. ", _vegan,
+                _buildSwitchList("Vegan", "Only Vegan meals. ", _vegan,
                         (newValue){
                       setState(() {
                         _vegan=newValue;
