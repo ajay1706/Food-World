@@ -11,8 +11,10 @@ class _TabsScreenState extends State<TabsScreen> {
 
  final List<Map<String, Object>>
  _pages = [
-   {'page': CategoriesScreen(), 'title':'Categories'},
-   {'page':   FavoritesScreen(), 'title':'Your Favourites'},
+   {'page': CategoriesScreen(),
+     'title':'Categories'},
+   {'page':   FavoritesScreen(),
+     'title':'Your Favourites'},
 
 
 
@@ -41,10 +43,16 @@ class _TabsScreenState extends State<TabsScreen> {
   Widget build(BuildContext context) {
     return  Scaffold(
         appBar: AppBar(
+
           title: Text(_pages[_selectedPageIndex]['title']),
 
         ),
 
+        drawer: Drawer(
+          child:,
+
+
+        ),
         body: _pages[_selectedPageIndex]['page'],
       bottomNavigationBar: BottomNavigationBar(
         onTap:_selectPage ,
