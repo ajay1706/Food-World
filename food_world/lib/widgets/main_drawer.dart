@@ -29,11 +29,11 @@ child:Column(
     Container(
       height: 120,
         width: double.infinity,
-      padding: EdgeInsets.all(25),
+      padding: EdgeInsets.fromLTRB(20, 30, 20, 0),
       alignment: Alignment.centerLeft,
       color: Theme.of(context).primaryColor,
 
-      child: Text("Cooking up",
+      child: Text("Cooking Details",
       style: TextStyle(
         fontWeight: FontWeight.w900,
         fontSize: 30,
@@ -42,7 +42,7 @@ child:Column(
     )
 ,
 SizedBox(height: 20,),
-    buildListTile("Meals", Icons.restaurant,
+   buildListTile("Meals", Icons.restaurant,
       (){
       Navigator.of(context).pushReplacementNamed('/');
 

@@ -85,7 +85,7 @@ bool _isMealFavorite(String id){
 title: TextStyle(
   fontSize: 20,
   fontFamily: 'RobotoCondensed',
-  fontWeight: FontWeight.bold
+  fontWeight: FontWeight.w600
 )
         )
       ),
