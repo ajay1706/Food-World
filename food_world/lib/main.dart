@@ -7,7 +7,10 @@ import './screens/category_meals_screen.dart';
 import './screens/meal_detail_screen.dart';
 import './screens/tabs_screen.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(MyApp(
+
+
+));
 
 
 class MyApp extends StatefulWidget {
@@ -72,6 +75,7 @@ bool _isMealFavorite(String id){
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: "Daily Meals",
       theme: ThemeData(
         primarySwatch: Colors.indigo,
@@ -101,7 +105,9 @@ title: TextStyle(
 //      },
       onUnknownRoute:(settings){
 
-        return MaterialPageRoute(builder: (ctx) => CategoriesScreen());
+        return MaterialPageRoute(builder: (ctx) => CategoriesScreen(
+
+        ));
       } ,
     );
   }

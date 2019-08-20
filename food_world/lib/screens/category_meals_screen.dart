@@ -7,11 +7,13 @@ static const routeName = '/category-meals';
 final List<Meal> availableMeals;
 CategoryMealsScreen(this.availableMeals);
 
+
   @override
   _CategoryMealsScreenState createState() => _CategoryMealsScreenState();
 }
 
 class _CategoryMealsScreenState extends State<CategoryMealsScreen> {
+
   String categoryTitle;
   List<Meal> displayMeals;
 var _loadedInitData =false;
@@ -58,6 +60,7 @@ var _loadedInitData =false;
 
 
     return Scaffold(
+
       appBar: AppBar(title: Text(categoryTitle),),
       body: ListView.builder(itemBuilder: (ctx , index){
         return MealItem(
