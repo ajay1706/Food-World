@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:food_world/screens/favourites_screen.dart';
+import 'package:food_world/widgets/main_drawer.dart';
 import './categories_screen.dart';
 
 class TabsScreen extends StatefulWidget {
@@ -15,13 +16,6 @@ class _TabsScreenState extends State<TabsScreen> {
      'title':'Categories'},
    {'page':   FavoritesScreen(),
      'title':'Your Favourites'},
-
-
-
-
-
-
-
 
   ];
 
@@ -47,12 +41,7 @@ class _TabsScreenState extends State<TabsScreen> {
           title: Text(_pages[_selectedPageIndex]['title']),
 
         ),
-
-        drawer: Drawer(
-          child:,
-
-
-        ),
+drawer: MainDrawer(),
         body: _pages[_selectedPageIndex]['page'],
       bottomNavigationBar: BottomNavigationBar(
         onTap:_selectPage ,

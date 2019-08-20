@@ -28,7 +28,7 @@ child:Column(
     Container(
       height: 120,
         width: double.infinity,
-      padding: EdgeInsets.all(20),
+      padding: EdgeInsets.all(25),
       alignment: Alignment.centerLeft,
       color: Theme.of(context).accentColor,
 
